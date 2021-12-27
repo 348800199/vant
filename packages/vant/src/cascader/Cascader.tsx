@@ -175,7 +175,7 @@ export default defineComponent({
       };
       emit('change', params);
 
-      if (!option[childrenKey]) {
+      if (!option[childrenKey] || !option[childrenKey].length ) {
         emit('finish', params);
       }
     };
